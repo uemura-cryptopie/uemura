@@ -1,0 +1,11 @@
+drop table asset_amount;
+drop table borrowing;
+drop table circumstances;
+drop table delayed;
+drop table earning;
+drop table family_type;
+drop table home_type;
+drop table income_type;
+drop table invest_experience;
+drop table residence_type;
+drop table service_length;

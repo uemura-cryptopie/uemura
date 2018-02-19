@@ -1,0 +1,51 @@
+CREATE TABLE `hojin` (
+  `userID` int(11) NOT NULL,
+  `emailAddress` varchar(30) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `corpNameKanji` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `corpNameKana` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `presidentKanji` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `presidentKana` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `zipnum` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `prefecture` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `city` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `address` varchar(30) CHARACTER SET utf8 NOT NULL,
+  `building` varchar(30) CHARACTER SET utf8 DEFAULT NULL,
+  `telephone` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `regidenceLength` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `employementType` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `officeName` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `officeZipnum` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `officeTelephone` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `officeCity` varchar(30) COLLATE utf8_bin NOT NULL,
+  `officeAddress` varchar(30) CHARACTER SET utf8 NOT NULL,
+  `serviceLength` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `earning` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `borrow` varchar(101) CHARACTER SET utf8 NOT NULL,
+  `delay` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `familyType` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `assetAmount` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `incomeType` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `purposeSettlement` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `purposeTrade` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `purposeInvest` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `circumstancesType` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `circumstancesText` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `experienceFx` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `experienceStock` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `experienceCredit` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `experienceOption` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `experienceFuture` varchar(2) CHARACTER SET utf8 NOT NULL,
+  `lawFlag_regidence` tinyint(1) NOT NULL,
+  `lawFlag_tax` tinyint(1) NOT NULL,
+  `lawFlag_offical` tinyint(1) NOT NULL,
+  `idConfirmFlag` tinyint(1) NOT NULL,
+  `createDateTime` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `updateDateTime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+ALTER TABLE `hojin`
+  ADD PRIMARY KEY (`userID`);
+  ALTER TABLE `hojin`
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;

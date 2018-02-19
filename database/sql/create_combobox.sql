@@ -1,0 +1,119 @@
+CREATE TABLE `cryptopie`.`asset_amount` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`borrowing` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`circumstances` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`delayed` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`earning` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`employement_type` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`family_type` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`home_type` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`income_type` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`invest_experience` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`residence_type` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `cryptopie`.`service_length` (
+     `id` INT NOT NULL AUTO_INCREMENT, 
+     `key` INT NOT NULL , 
+     `value` VARCHAR(50) NOT NULL , 
+     `create_date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , 
+     `update_date_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE 
+      CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARSET=utf8;

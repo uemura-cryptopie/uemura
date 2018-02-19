@@ -1,0 +1,3 @@
+function hyde(){
+    alert('hyde');
+}
